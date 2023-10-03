@@ -1,70 +1,321 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   day01.css                                          :+:      :+:    :+:   */
+/*   emoji.css                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: caalbert <caalbert@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 20:12:27 by caalbert          #+#    #+#             */
-/*   Updated: 2023/10/02 21:56:15 by caalbert         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:41:46 by caalbert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-.emoji {
-	width: 50vw;
-	height: 50vw;
-	border-radius: 50%;
-	background-color: #4b2403;
-	position: relative;
-	z-index: 10;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0c0554;
 }
 
-.eye {
-	width: 7.5vw;
-	height: 7.5vw;
-	background-color: #000;
+.skull {
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.jaw-apple {
+    position: absolute;
+	width: 45px;
+    height: 45px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.left-jaw-apple {
+    top: 78%;
+    left: 15%;
+	rotate: -10deg;
+	z-index: 1;
+}
+
+.right-jaw-apple {
+    top: 78%;
+    right: 15%;
+	rotate: 10deg;
+	z-index: 1;
+}
+
+.jaw {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100px;
+    height: 110px;
+    border-radius: 10%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.skull-line {
+    width: 200px;
+    height: 200px;
+    background-color: #000000;
+	border: 5px solid #000000;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 0;
+}
+
+.jaw-line {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 100px;
+    height: 110px;
+	border: 5px solid #000000;
+    border-radius: 10%;
+    background-color: #010101;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.left-skull-apple-line {
 	position: absolute;
-	border-radius: 50%;
-	z-index: 12;
-}
-
-.eye.left {
-	left: 12.5vw;
-	top: 17.5vw;
-}
-
-.eye.right {
-	right: 12.5vw;
-	top: 17.5vw;
-}
-
-.mouth {
-	width: 20vw;
-	height: 10vw;
-	position: absolute;
-	bottom: 10vw;
-	left: 15vw;
-	overflow: hidden;
-	border-bottom: 2vw solid #000;
-	border-radius: 2.5vw 2.5vw 10vw 10vw;
-}
-
-.hair {
-	background-color: #000;
-	position: absolute;
-	border-radius: 50%;
+    top: 76%;
+    left: 13%;
+	width: 45px;
+    height: 45px;
+    background-color: #000000;
+	border: 5px solid #000000;
+    border-radius: 50%;
 	z-index: 0;
 }
 
-.hair.one {
-	width: 10vw;
-	height: 10vw;
-	left: 15vw;
-	top: -5vw;
+.right-skull-apple-line {
+	position: absolute;
+    top: 76%;
+    right: 13%;
+	width: 45px;
+    height: 45px;
+    background-color: #000000;
+	border: 5px solid #000000;
+    border-radius: 50%;
+	z-index: 0;
 }
 
-footer {
-	flex-shrink: 0;
-	text-align: center;
-	padding: 10px;
+.eye {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    border-radius: 70% 70% 30% 30% / 20% 20% 60% 60%;
+    background-color: #000000;
+	z-index: 1;
+}
+
+.left-eye {
+    top: -30%;
+    left: -20%;
+	rotate: -10deg;
+	z-index: 1;
+}
+
+.right-eye {
+    top: -30%;
+    right: -20%;
+	rotate: 10deg;
+	z-index: 1;
+}
+
+.pupil {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.left-pupil {
+	left: 5%;
+	z-index: 1;
+}
+
+.right-pupil {
+	right: -5%;
+	z-index: 1;
+}
+
+.nose {
+    position: absolute;
+    width: 10px;
+    height: 30px;
+    background-color: #000000;
+    transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.left-nose {
+	position: absolute;
+	top: 25%;
+	left: 42%;
+	border-radius: 30% 15% 0 80% / 80% 80% 20% 20%;
+	z-index: 1;
+}
+
+.right-nose {
+	position: absolute;
+	top: 25%;
+	right: 30%;
+	border-radius: 15% 30% 80% 0 / 80% 80% 20% 20%;
+	z-index: 1;
+}
+
+.teeth {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 10px;
+    height: 30px;
+	border-radius: 30%;
+    background-color: #030303;
+    transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.mouth {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 80px;
+    height: 5px;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+	z-index: 1;
+}
+
+.bone {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 30px;
+	background-color: #deb305;
+	transform: translate(-50%, -50%);
+	rotate:calc(45deg);
+	z-index: 1;
+}
+
+.bone::before,
+.bone::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #deb305;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.bone::before {
+	top: 30%;
+    left: -5%; /* Cabeça de osso esquerda */
+}
+
+.bone::after {
+	top: 70%;
+    right: -5%; /* Cabeça de osso direita */
+}
+
+.bone::before::before {
+
+    left: -40px; /* Círculo à esquerda da cabeça de osso esquerda */
+}
+
+.bone::before::after {
+    left: -80px; /* Círculo mais à esquerda da cabeça de osso esquerda */
+}
+
+.bone::after::before {
+    right: -40px; /* Círculo à direita da cabeça de osso direita */
+}
+
+.bone::after::after {
+    right: -80px; /* Círculo mais à direita da cabeça de osso direita */
+}
+
+/* shadow skull */
+
+.shadow-jaw {
+	width: 42px;
+    height: 35px;
+    background: linear-gradient(to bottom right, #000000 9%, #ffffff00 50%);
+    border-top-left-radius: 100px;
+    position: relative;
+}
+
+.left-shadow-jaw {
+	top: 35%;
+	left: -4%;
+	transform: scaleX(1.1) rotate(5deg);
+	z-index: 3;
+}
+
+.right-shadow-jaw {
+    top: 4%;
+    right: -62%;
+    transform: scaleX(-1.1) rotate(5deg);
+    z-index: 4;
+}
+
+.shadow-teeth {
+	position: absolute;
+	width: 50%;
+	height: 60%;
+	border-radius: 30%;
+	background: linear-gradient(to top right, #000000 0%, #ffffff00 30%);
+	transform: translate(-50%, -50%);
+	z-index: 3;
+}
+
+.shadow-teeth-left {
+    position: absolute;
+    top: 75%;
+    left: 21%;
+    width: 50%;
+    height: 60%;
+    border-radius: 30%;
+    background: linear-gradient(to top right, #000000 0%, #ffffff00 30%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.shadow-teeth-right {
+    position: absolute;
+    top: 75%;
+    right: 20%;
+    width: 50%;
+    height: 60%;
+    border-radius: 30%;
+    background: linear-gradient(to top left, #000000 0%, #ffffff00 30%);
+    transform: translate(50%, -50%);
+    z-index: 3;
+}
+
+.shadow-skull {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle at 50% 10%, transparent 0% #000, transparent 50%, #000000 50%);
+    border-radius: 50%;
+    position: relative;
+    z-index: 1;
 }

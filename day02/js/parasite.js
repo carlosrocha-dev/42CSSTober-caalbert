@@ -1,4 +1,4 @@
-for (let i = 0; i < 420; i++) {
+for (let i = 0; i < 1420; i++) {
 	const protozoan = document.createElement("div");
 	protozoan.className = "protozoan";
 
