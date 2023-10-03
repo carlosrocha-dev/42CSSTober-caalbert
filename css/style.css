@@ -6,7 +6,7 @@
 /*   By: caalbert <caalbert@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/02 20:12:27 by caalbert          #+#    #+#             */
-/*   Updated: 2023/10/02 21:07:14 by caalbert         ###   ########.fr       */
+/*   Updated: 2023/10/02 22:38:39 by caalbert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,60 +52,35 @@ h2 {
 	text-align: center;
 	width: 100%;
 	margin: 0;
+	margin-bottom: 42px;
 	margin-top: 15%;
-  }
-
-.emoji {
-	width: 50vw;
-	height: 50vw;
-	border-radius: 50%;
-	background-color: #4b2403;
-	position: relative;
-	z-index: 10;
 }
 
-.eye {
-	width: 7.5vw;
-	height: 7.5vw;
-	background-color: #000;
-	position: absolute;
-	border-radius: 50%;
-	z-index: 12;
+li {
+	list-style: none;
+	text-decoration: none;
+	font-size: 7rem;
+	color: darkred;
+	font-family: pixoretosp;
+	margin-bottom: 42px;
 }
 
-.eye.left {
-	left: 12.5vw;
-	top: 17.5vw;
+li a {
+	color: darkred;
+	text-decoration: none;
 }
 
-.eye.right {
-	right: 12.5vw;
-	top: 17.5vw;
+li a:hover {
+	color: darkslategrey;
 }
 
-.mouth {
-	width: 20vw;
-	height: 10vw;
-	position: absolute;
-	bottom: 10vw;
-	left: 15vw;
-	overflow: hidden;
-	border-bottom: 2vw solid #000;
-	border-radius: 2.5vw 2.5vw 10vw 10vw;
-}
-
-.hair {
-	background-color: #000;
-	position: absolute;
-	border-radius: 50%;
-	z-index: 0;
-}
-
-.hair.one {
-	width: 10vw;
-	height: 10vw;
-	left: 15vw;
-	top: -5vw;
+.back-button, a {
+	font-size: 4rem;
+	color: darkred;
+	font-family: pixoretosp;
+	margin-bottom: 21px;
+	text-decoration: none;
+	cursor:pointer
 }
 
 footer {

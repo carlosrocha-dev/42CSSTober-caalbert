@@ -1,0 +1,39 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   parasite.css                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: caalbert <caalbert@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:12:27 by caalbert          #+#    #+#             */
+/*   Updated: 2023/10/03 00:01:09 by caalbert         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+body {
+	background-color: #00800055;
+  }
+
+
+  .protozoan {
+	position: absolute;
+	width: 100px;
+	height: 20px;
+	background-color: rgba(0, 255, 0, 0.5);
+  }
+
+  .tentacle {
+	position: absolute;
+	width: 30px;
+	height: 5px;
+	background-color: rgba(255, 0, 0, 0.5);
+  }
+
+  .spore {
+	position: absolute;
+	width: 5px;
+	height: 5px;
+	background-color: #f00;
+	border-radius: 50%;
+  }
+  

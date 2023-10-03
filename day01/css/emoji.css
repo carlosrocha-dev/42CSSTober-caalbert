@@ -1,0 +1,70 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   day01.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: caalbert <caalbert@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:12:27 by caalbert          #+#    #+#             */
+/*   Updated: 2023/10/02 21:56:15 by caalbert         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+.emoji {
+	width: 50vw;
+	height: 50vw;
+	border-radius: 50%;
+	background-color: #4b2403;
+	position: relative;
+	z-index: 10;
+}
+
+.eye {
+	width: 7.5vw;
+	height: 7.5vw;
+	background-color: #000;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 12;
+}
+
+.eye.left {
+	left: 12.5vw;
+	top: 17.5vw;
+}
+
+.eye.right {
+	right: 12.5vw;
+	top: 17.5vw;
+}
+
+.mouth {
+	width: 20vw;
+	height: 10vw;
+	position: absolute;
+	bottom: 10vw;
+	left: 15vw;
+	overflow: hidden;
+	border-bottom: 2vw solid #000;
+	border-radius: 2.5vw 2.5vw 10vw 10vw;
+}
+
+.hair {
+	background-color: #000;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.hair.one {
+	width: 10vw;
+	height: 10vw;
+	left: 15vw;
+	top: -5vw;
+}
+
+footer {
+	flex-shrink: 0;
+	text-align: center;
+	padding: 10px;
+}
