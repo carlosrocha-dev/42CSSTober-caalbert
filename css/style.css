@@ -1,0 +1,115 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   style.css                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: caalbert <caalbert@student.42sp.org.br>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/02 20:12:27 by caalbert          #+#    #+#             */
+/*   Updated: 2023/10/02 21:07:14 by caalbert         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+@font-face {
+	font-family: "pixoretosp";
+	src: url("../assets/pixoretosp.ttf");
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f2f2f2;
+	font-family: 'Montserrat', sans-serif;
+}
+
+#page-container {
+	display: flex;
+	flex-direction: column;
+	min-height: 80vh;
+}
+
+#content-wrap {
+	flex: 1;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: pixoretosp;
+}
+
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h2 {
+	font-size: 10vw;
+	text-align: center;
+	width: 100%;
+	margin: 0;
+	margin-top: 15%;
+  }
+
+.emoji {
+	width: 50vw;
+	height: 50vw;
+	border-radius: 50%;
+	background-color: #4b2403;
+	position: relative;
+	z-index: 10;
+}
+
+.eye {
+	width: 7.5vw;
+	height: 7.5vw;
+	background-color: #000;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 12;
+}
+
+.eye.left {
+	left: 12.5vw;
+	top: 17.5vw;
+}
+
+.eye.right {
+	right: 12.5vw;
+	top: 17.5vw;
+}
+
+.mouth {
+	width: 20vw;
+	height: 10vw;
+	position: absolute;
+	bottom: 10vw;
+	left: 15vw;
+	overflow: hidden;
+	border-bottom: 2vw solid #000;
+	border-radius: 2.5vw 2.5vw 10vw 10vw;
+}
+
+.hair {
+	background-color: #000;
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+}
+
+.hair.one {
+	width: 10vw;
+	height: 10vw;
+	left: 15vw;
+	top: -5vw;
+}
+
+footer {
+	flex-shrink: 0;
+	text-align: center;
+	padding: 10px;
+}
