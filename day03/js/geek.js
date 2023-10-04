@@ -1,22 +1,33 @@
 const grid = document.getElementById("grid");
-const pacManMatrix = [
-	[0, 0, 1, 1, 1, 0, 0],
-	[0, 1, 1, 1, 1, 1, 0],
-	[1, 1, 0, 1, 1, 0, 0],
-	[1, 1, 1, 1, 0, 0, 0],
-	[1, 1, 1, 1, 1, 0, 0],
-	[0, 1, 1,1, 1, 1, 0],
-	[0, 0, 1, 1, 1, 0, 0]
-];
+const size = 100;
+const radiusSq = Math.pow(size / 2, 2);
+let row = 0;
+let col = 0;
 
-for (let row = 0; row < pacManMatrix.length; row++) {
-	for (let col = 0; col < pacManMatrix[row].length; col++) {
+while (row < size) {
+	col = 0;
+	while (col < size) {
 		const cell = document.createElement("div");
 		cell.className = "cell";
-		cell.textContent = pacManMatrix[row][col];
-		if (pacManMatrix[row][col] === 1) {
-			cell.classList.add("pacman");
+		const dx = col - size / 2;
+		const dy = row - size / 2;
+		const distanceSq = Math.pow(dx, 2) + Math.pow(dy, 2);
+
+		if (distanceSq <= radiusSq) {
+			if (dx >= 0 && dy >= -dx && dy <= dx) {
+				cell.textContent = "0";
+			} else {
+				if (Math.random() < 0.5) {
+					cell.textContent = "0";
+				} else {
+					cell.textContent = "1";
+				}
+			}
+		} else {
+			cell.textContent = "0";
 		}
 		grid.appendChild(cell);
+		col++;
 	}
+	row++;
 }

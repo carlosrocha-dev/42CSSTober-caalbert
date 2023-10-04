@@ -1,23 +1,26 @@
 body, html {
-	background-color: chocolate;
+	background-color: black;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(7, 30px);
-	grid-template-rows: repeat(7, 30px);
-	gap: 0 0;
+.pacman-container {
+	transform: scaleX(-1);
 }
 
-.cell {
-	width: 30px;
-	height: 30px;
-	text-align: center;
-	line-height: 30px;
-	font-size: 24px;
-	color: white;
+.pacman {
+	background-color: yellow;
+	width: 50vmin;
+	height: 50vmin;
+	position: relative;
+	border-radius: 50%;
+	clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0 100%, 65% 50%);
 }
 
-.cell.pacman {
-	background-color: rgb(0, 174, 49);
+.eye {
+	background-color: black;
+	width: 2.5vmin;
+	height: 2.5vmin;
+	position: absolute;
+	border-radius: 50%;
+	top: 20%;
+	left: 65%;
 }
