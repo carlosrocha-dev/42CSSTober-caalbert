@@ -1,0 +1,130 @@
+body, html {
+	background-color: #000000;
+}
+
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 800px;
+	height: 800px;
+	overflow: hidden;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #f00, #ff0, #0f0, #0ff, #00f, #f0f, #f00);
+}
+
+
+
+.hair{
+	position: absolute;
+	top: 50%;
+	left: 52%;
+	transform: translate(-50%, -50%);
+	width: 700px;
+	height: 500px;
+	border-radius: 50%;
+	background: black;
+}
+
+.hair2{
+	position: absolute;
+	top: 60.5%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+	background: black;
+}
+
+.hair-bun{
+	position: absolute;
+	top: 35.5%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	width: 250px;
+	height: 250px;
+	border-radius: 50%;
+	background: black;
+}
+
+.head{
+	position: absolute;
+	top: 50%;
+	left: 48%;
+	transform: translate(-50%, -50%);
+	width: 300px;
+	height: 300px;
+	border-radius: 10% 50% 50% 50% / 50% 50% 50% 50%;
+	background: brown;
+	rotate: 120deg;
+	transform: scaleX(-1);
+}
+
+.eyes{
+	position: absolute;
+	top: 76%;
+	left: 80%;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	rotate: -160deg;
+	scale: 3;
+}
+.eyes1{
+	position: absolute;
+	top: 5%;
+	left: 68%;
+	transform: translate(-50%, -50%);
+	width: 24.5px;
+	height: 18px;
+	border-radius: 50%;
+	background: brown;
+	z-index: 1;
+}
+
+.eyes2{
+	position: absolute;
+	top: 70%;
+	left: 80%;
+	transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #000000;
+}
+
+.ear{
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70px;
+	height: 90px;
+	border-radius: 50%;
+	background: brown;
+	rotate: -25.4deg;
+}
+
+.neck{
+	position: absolute;
+	top: 68%;
+	left: 50%;
+	width: 80px;
+	height: 200px;
+	background: brown;
+	transform: skewX(-5deg);
+}
+
+.body{
+	position: absolute;
+	top: 90%;
+	left: 35.8%;
+	width: 300px;
+	height: 300px;
+	background: rgb(255, 198, 12);
+	border-radius: 50% 0 0 50%/ 50% 0 0 50%;
+	transform: skewX(-5deg);
+	rotate: 90deg;
+}
